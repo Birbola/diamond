@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    list-style: none;
+    font-family: 'Prompt', sans-serif;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

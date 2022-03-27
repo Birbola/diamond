@@ -1,0 +1,27 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Monokai",
+    "window.zoomLevel": 3,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+        "> 5%",
+        "last 5 versions"
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "diffEditor.wordWrap": "on"
+}

@@ -1,0 +1,1128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614636558_97-p-fon-shkola-dlya-fotoshopa-109.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .navbar{
+        width: 100%;
+        position: fixed;
+        z-index: 111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background: #333;
+        box-shadow: 0 0 5px #333;
+        &-logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 45px;
+            font-weight: 600;
+            color: orange;
+            text-shadow: 0 0 1px #afafaf;
+        }
+        &-btn{
+            display: none;
+        }
+        &-menu{
+            display: flex;
+            gap: 30px;
+            &-link{
+                font-size: 34px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: orange;
+                text-shadow: 0 0 1.2px #afafaf;
+                transition: 250ms;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                &:active{
+                    transform: scale(.95);
+                }
+            }
+        }
+    }
+    &-content{
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-text{
+            text-align: center;
+            .main-text-title{
+                font-size: 70px;
+                font-weight: 600;
+                text-shadow: 0 0 3px #333;
+                color: orange;
+                letter-spacing: 2px;
+            }
+            .main-text-desc{
+                text-shadow: 0 0 3px #333;
+                font-size: 50px;
+                color: lighten(orange,10);
+                margin: 0 0 20px 0;
+            }
+            .main-text-btns{
+                display: inline-flex;
+                gap: 30px;
+                &__btn{
+                    color: orange;
+                    background: inherit;
+                    font-size: 40px;
+                    padding: 0 40px;
+                    border: 4px solid orange;
+                    border-radius: 50px;
+                    transition: 250ms;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &:active{
+                        transform: scale(.95);
+                    }
+                }
+            }
+        }
+        &-card{
+            position: sticky;
+            top: 100%;
+            display: flex;
+            gap: 30px;
+            background: lighten(orange,25);
+            padding: 20px 50px;
+            box-shadow: 0 0 15px #333;
+            cursor: pointer;
+            .main-card{
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                padding: 10px 15px;
+                .icon{
+                    font-size: 40px;
+                    color: lighten(#333,10);
+                }
+                &-text{
+                    color: lighten(#333,10);
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+.project{
+    padding-top: 60px;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap: 30px;
+    &-card{
+        padding: 20px 20px 20px 20px;
+        border: 2px solid orange;
+        transition: 250ms;
+        &:hover{
+            background: orange;
+            .pro{
+                color: #fff;
+            }
+            .project-card-text{
+                .project-card__title{
+                    color: #fff;
+                }
+                .project-card__desc{
+                    color: #fff;
+                }
+                .project-card__btn{
+                    color: #fff;
+                    border-color: #fff;
+                }
+            }
+        }
+        .pro{
+            width: 40px;
+            height: 40px;
+            color: orange;
+        }
+        &-text{
+            .project-card__title{
+                font-size: 25px;
+                color: orange;
+                letter-spacing: 2px;
+            }
+            .project-card__desc{
+                margin: 10px 0;
+                font-size: 15px;
+                color: darken(orange,12);
+            }
+            .project-card__btn{
+                display: inline-block;
+                letter-spacing: 2px;
+                font-size: 30px;
+                padding: 0px 20px;
+                border: 2px solid orange;
+                border-radius: 30px;
+                color: orange;
+                transition: 250ms;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                &:active{
+                    transform: scale(.95);
+                }
+            }
+        }
+    }
+}
+
+.human{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &-title{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 0 0 2px #333;
+    }
+    &-corusel{
+        border: 4px solid orange;
+        max-width: 1500px;
+        overflow-x: hidden;
+        margin: 0 auto;
+        &-rol{
+            transition: 300ms ease 400ms;
+            display: flex;
+            .human-card{
+                padding: 10px;
+                min-width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                &__img{
+                    width: 500px;
+                    height: 600px;
+                }
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    &__title{
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 40px;
+                        font-weight: 600;
+                        color: #333;
+                    }
+                    &__desc{
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 30px;
+                        color: lighten(#333,15);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    margin-top: 40px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lighten(#333,15);
+    &-name{
+        &__title{
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: lighten(#afafaf,10);
+        }
+    }
+    &-links{
+        &__title{
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: 400;
+            color: lighten(#afafaf,10);
+        }
+        &-desc{
+            display: flex;
+            gap: 30px;
+            .contact-links{
+                font-size: 25px;
+                transition: 300ms;
+                &:hover{
+                    transform: scale(1.5);
+                }
+                .c-1{
+                    color: red;
+                }
+                .c-2{
+                    color: #3298db;
+                }
+                .c-3{
+                    color: rgb(39, 39, 202);
+                }
+                .c-4{
+                    color: rgb(247, 0, 255);
+                }
+            }
+        }
+    }
+}
+
+.l-1{
+    transform: translateX(0);
+}
+.l-2{
+    transform: translateX(-100%);
+}
+.l-3{
+    transform: translateX(-200%);
+}
+.l-4{
+    transform: translateX(-300%);
+}
+.l-5{
+    transform: translateX(-400%);
+}
+.l-6{
+    transform: translateX(-500%);
+}
+.l-7{
+    transform: translateX(-600%);
+}
+
+@media only screen and (max-width:1600px) {
+    .main{
+        .navbar{
+            padding: 15px 30px;
+            &-logo{
+                font-size: 34px;
+            }
+            &-menu{
+                &-link{
+                    font-size: 34px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 50px;
+                }
+                .main-text-desc{
+                    font-size: 40px;
+                }
+                .main-text-btns{
+                    &__btn{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .human{
+        &-title{
+            font-size: 40px;
+        }
+        &-corusel{
+            max-width: 1000px;
+            &-rol{
+                .human-card{
+                    &__img{
+                        width: 400px;
+                        height: 350px;
+                    }
+                    &-text{
+                        &__title{
+                            font-style: 30px;
+                        }
+                        &__desc{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        padding: 20px 40px;
+        &-name{
+            &__title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .main{
+        .navbar{
+            padding: 15px 30px;
+            &-logo{
+                font-size: 30px;
+            }
+            &-menu{
+                &-link{
+                    font-size: 30px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 50px;
+                }
+                .main-text-desc{
+                    font-size: 40px;
+                }
+                .main-text-btns{
+                    &__btn{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project{
+        width: 90%;
+    }
+
+    .human{
+        &-title{
+            font-size: 40px;
+        }
+        &-corusel{
+            max-width: 1000px;
+            &-rol{
+                .human-card{
+                    &__img{
+                        width: 400px;
+                        height: 350px;
+                    }
+                    &-text{
+                        &__title{
+                            font-style: 30px;
+                        }
+                        &__desc{
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        padding: 20px 40px;
+        &-name{
+            &__title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .main{
+        .navbar{
+            padding: 15px 30px;
+            &-logo{
+                font-size: 30px;
+            }
+            &-menu{
+                &-link{
+                    font-size: 30px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 40px;
+                }
+                .main-text-desc{
+                    font-size: 30px;
+                }
+                .main-text-btns{
+                    &__btn{
+                        font-size: 25px;
+                    }
+                }
+            }
+            &-card{
+                padding: 10px 40px;
+                .main-card{
+                    padding: 8px 10px;
+                    .icon{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project{
+        width: 90%;
+        grid-template-columns: repeat(2,400px);
+        justify-content: center;
+        &-card{
+            .pro{
+                width: 30px;
+                height: 30px;
+            }
+            &-text{
+                .project-card__title{
+                    font-size: 23px;
+                }
+                .project-card__desc{
+                    font-size: 13px;
+                }
+                .project-card__btn{
+                    font-size: 25px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .human{
+        &-title{
+            font-size: 40px;
+        }
+        &-corusel{
+            max-width: 900px;
+            &-rol{
+                .human-card{
+                    &__img{
+                        width: 350px;
+                        height: 300px;
+                    }
+                    &-text{
+                        &__title{
+                            font-size: 30px;
+                        }
+                        &__desc{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        padding: 20px 40px;
+        &-name{
+            &__title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .main{
+        .navbar{
+            position: relative;
+            padding: 15px 30px;
+            &-logo{
+                font-size: 30px;
+            }
+            &-btn{
+                display: inline-block;
+                font-size: 28px;
+                color: orange;
+                padding: 5px;
+                text-shadow: 0 0 1.2px #afafaf;
+            }
+            .navbar-active{
+                transform: translateY(20%) translateX(0);
+            }
+            .act{
+                transform: translateY(20%) translateX(-100%);
+            }
+            &-menu{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                top: 20%;
+                transition: 300ms;
+                background: #333;
+                padding: 10px 15px;
+                z-index: 00;
+                text-align: center;
+                &-link{
+                    font-size: 25px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 40px;
+                }
+                .main-text-desc{
+                    font-size: 30px;
+                }
+                .main-text-btns{
+                    &__btn{
+                        font-size: 20px;
+                        border: 2px solid orange;
+                    }
+                }
+            }
+            &-card{
+                position: static;
+                transform: translateY(40%);
+                padding: 10px 30px;
+                .main-card{
+                    padding: 8px 10px;
+                    .icon{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &-card{
+            .pro{
+                width: 40px;
+                height: 40px;
+            }
+            &-text{
+                .project-card__title{
+                    font-size: 30px;
+                }
+                .project-card__desc{
+                    font-size: 20px;
+                }
+                .project-card__btn{
+                    font-size: 30px;
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+
+    .human{
+        &-title{
+            font-size: 40px;
+        }
+        &-corusel{
+            max-width: 700px;
+            &-rol{
+                .human-card{
+                    &__img{
+                        width: 350px;
+                        height: 300px;
+                    }
+                    &-text{
+                        &__title{
+                            font-size: 30px;
+                        }
+                        &__desc{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 40px;
+        &-name{
+            &__title{
+                font-size: 20px;
+            }
+        }
+        &-links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            &__title{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .main{
+        .navbar{
+            position: relative;
+            padding: 15px 30px;
+            &-logo{
+                font-size: 30px;
+            }
+            &-btn{
+                display: inline-block;
+                font-size: 28px;
+                color: orange;
+                padding: 5px;
+                text-shadow: 0 0 1.2px #afafaf;
+            }
+            .navbar-active{
+                transform: translateY(20%) translateX(0);
+            }
+            .act{
+                transform: translateY(20%) translateX(-100%);
+            }
+            &-menu{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                top: 20%;
+                transition: 300ms;
+                background: #333;
+                padding: 10px 15px;
+                z-index: 00;
+                text-align: center;
+                &-link{
+                    font-size: 25px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 30px;
+                }
+                .main-text-desc{
+                    font-size: 25px;
+                }
+                .main-text-btns{
+                    display: flex;
+                    flex-direction: column;
+                    &__btn{
+                        font-size: 20px;
+                        border: 2px solid orange;
+                    }
+                }
+            }
+            &-card{
+                position: static;
+                transform: translateY(40%);
+                padding: 5px 1px;
+                display: grid;
+                gap: 5px;
+                grid-template-columns: repeat(2 , 185px);
+                .main-card{
+                    margin: 0 auto;
+                    gap: 10px;
+                    padding: 2px 1px;
+                    .icon{
+                        font-size: 20px;
+                    }
+                    &-text{
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &-card{
+            .pro{
+                width: 40px;
+                height: 40px;
+            }
+            &-text{
+                .project-card__title{
+                    font-size: 30px;
+                }
+                .project-card__desc{
+                    font-size: 20px;
+                }
+                .project-card__btn{
+                    font-size: 30px;
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+
+    .human{
+        &-title{
+            font-size: 40px;
+        }
+        &-corusel{
+            max-width: 380px;
+            &-rol{
+                .human-card{
+                    display: flex;
+                    flex-direction: column;
+                    &__img{
+                        width: 320px;
+                        height: 300px;
+                    }
+                    &-text{
+                        text-align: center;
+                        &__title{
+                            font-size: 30px;
+                        }
+                        &__desc{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 40px;
+        &-name{
+            &__title{
+                font-size: 20px;
+            }
+        }
+        &-links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            &__title{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .main{
+        .navbar{
+            position: relative;
+            padding: 15px 30px;
+            &-logo{
+                font-size: 30px;
+            }
+            &-btn{
+                display: inline-block;
+                font-size: 28px;
+                color: orange;
+                padding: 5px;
+                text-shadow: 0 0 1.2px #afafaf;
+            }
+            .navbar-active{
+                transform: translateY(20%) translateX(0);
+            }
+            .act{
+                transform: translateY(20%) translateX(-100%);
+            }
+            &-menu{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                top: 20%;
+                transition: 300ms;
+                background: #333;
+                padding: 10px 15px;
+                z-index: 00;
+                text-align: center;
+                &-link{
+                    font-size: 25px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 25px;
+                }
+                .main-text-desc{
+                    font-size: 20px;
+                }
+                .main-text-btns{
+                    display: inline-flex;
+                    flex-direction: column;
+                    &__btn{
+                        font-size: 20px;
+                        border: 2px solid orange;
+                    }
+                }
+            }
+            &-card{
+                position: static;
+                transform: translateY(40%);
+                padding: 5px 1px;
+                display: grid;
+                gap: 1px;
+                grid-template-columns: repeat(2 , 150px);
+                .main-card{
+                    margin: 0 auto;
+                    gap: 2px;
+                    padding: 2px 1px;
+                    .icon{
+                        font-size: 20px;
+                    }
+                    &-text{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &-card{
+            .pro{
+                width: 30px;
+                height: 30px;
+            }
+            &-text{
+                .project-card__title{
+                    font-size: 25px;
+                }
+                .project-card__desc{
+                    font-size: 18px;
+                }
+                .project-card__btn{
+                    font-size: 20px;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+
+    .human{
+        gap: 10px;
+        &-title{
+            font-size: 35px;
+        }
+        &-corusel{
+            max-width: 350px;
+            &-rol{
+                .human-card{
+                    display: flex;
+                    flex-direction: column;
+                    &__img{
+                        width: 300px;
+                        height: 340px;
+                    }
+                    &-text{
+                        text-align: center;
+                        &__title{
+                            font-size: 30px;
+                        }
+                        &__desc{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 40px;
+        &-name{
+            &__title{
+                font-size: 15px;
+            }
+        }
+        &-links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            &__title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .main{
+        .navbar{
+            position: relative;
+            padding: 15px 30px;
+            &-logo{
+                font-size: 25px;
+            }
+            &-btn{
+                display: inline-block;
+                font-size: 28px;
+                color: orange;
+                padding: 5px;
+                text-shadow: 0 0 1.2px #afafaf;
+            }
+            .navbar-active{
+                transform: translateY(20%) translateX(0);
+            }
+            .act{
+                transform: translateY(20%) translateX(-100%);
+            }
+            &-menu{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                top: 20%;
+                transition: 300ms;
+                background: #333;
+                padding: 10px 15px;
+                z-index: 00;
+                text-align: center;
+                &-link{
+                    font-size: 20px;
+                }
+            }
+        }
+        &-content{
+            &-text{
+                .main-text-title{
+                    font-size: 25px;
+                }
+                .main-text-desc{
+                    font-size: 20px;
+                }
+                .main-text-btns{
+                    display: inline-flex;
+                    flex-direction: column;
+                    &__btn{
+                        font-size: 20px;
+                        border: 2px solid orange;
+                    }
+                }
+            }
+            &-card{
+                position: static;
+                transform: translateY(40%);
+                padding: 5px 1px;
+                display: grid;
+                gap: 1px;
+                grid-template-columns: repeat(2 , 150px);
+                .main-card{
+                    margin: 0 auto;
+                    gap: 2px;
+                    padding: 2px 1px;
+                    .icon{
+                        font-size: 20px;
+                    }
+                    &-text{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &-card{
+            .pro{
+                width: 30px;
+                height: 30px;
+            }
+            &-text{
+                .project-card__title{
+                    font-size: 25px;
+                }
+                .project-card__desc{
+                    font-size: 18px;
+                }
+                .project-card__btn{
+                    font-size: 20px;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+
+    .human{
+        gap: 10px;
+        &-title{
+            font-size: 35px;
+        }
+        &-corusel{
+            max-width: 300px;
+            &-rol{
+                .human-card{
+                    display: flex;
+                    flex-direction: column;
+                    &__img{
+                        width: 280px;
+                        height: 320px;
+                    }
+                    &-text{
+                        text-align: center;
+                        &__title{
+                            font-size: 30px;
+                        }
+                        &__desc{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 20px;
+        &-name{
+            &__title{
+                font-size: 15px;
+            }
+        }
+        &-links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            &__title{
+                font-size: 20px;
+            }
+        }
+    }
+}
