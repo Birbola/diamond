@@ -440,7 +440,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1500px) {
   .navbar-menu .navbar-card {
     width: 100%;
   }
@@ -580,7 +580,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,7 +679,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -778,7 +778,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -899,7 +899,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1020,7 +1020,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 350px) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
